@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carListCellId" id="KGk-i7-Jjw" customClass="CarListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sport-car_light" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-1T-Zhl">
+                        <rect key="frame" x="20" y="11.5" width="26" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="aO4-m4-Ffo"/>
+                            <constraint firstAttribute="height" constant="20" id="hUa-W3-V75"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沪A666888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-VA-wIW">
+                        <rect key="frame" x="61" y="11" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="EyA-GG-nFh"/>
+                            <constraint firstAttribute="height" constant="20" id="h8l-hw-4Ea"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.65593434343434343" green="0.65593434343434343" blue="0.65593434343434343" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥迪A6l" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLp-m4-EUM">
+                        <rect key="frame" x="156" y="11" width="179" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="UOw-TX-uDO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.65593434340000001" green="0.65593434340000001" blue="0.65593434340000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSA-tN-QwH" userLabel="line">
+                        <rect key="frame" x="0.0" y="41" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.92505129420202026" green="0.92505129420202026" blue="0.92505129420202026" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tBB-F6-D9f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mgk-VA-wIW" firstAttribute="leading" secondItem="KdK-1T-Zhl" secondAttribute="trailing" constant="15" id="18z-f4-H7L"/>
+                    <constraint firstAttribute="trailing" secondItem="vLp-m4-EUM" secondAttribute="trailing" constant="40" id="5pL-8V-TcF"/>
+                    <constraint firstItem="ZSA-tN-QwH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5ss-a6-XZB"/>
+                    <constraint firstAttribute="trailing" secondItem="ZSA-tN-QwH" secondAttribute="trailing" id="BSU-Ih-5uF"/>
+                    <constraint firstItem="KdK-1T-Zhl" firstAttribute="centerY" secondItem="vLp-m4-EUM" secondAttribute="centerY" id="HRp-QT-Qz8"/>
+                    <constraint firstAttribute="centerY" secondItem="KdK-1T-Zhl" secondAttribute="centerY" id="Nki-Kv-Aic"/>
+                    <constraint firstItem="Mgk-VA-wIW" firstAttribute="centerY" secondItem="KdK-1T-Zhl" secondAttribute="centerY" id="Xos-Et-312"/>
+                    <constraint firstAttribute="bottom" secondItem="ZSA-tN-QwH" secondAttribute="bottom" id="c0w-lo-XkK"/>
+                    <constraint firstItem="KdK-1T-Zhl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mqQ-zt-GPh"/>
+                    <constraint firstItem="vLp-m4-EUM" firstAttribute="leading" secondItem="Mgk-VA-wIW" secondAttribute="trailing" constant="15" id="sLW-lN-Cov"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carNameLabel" destination="vLp-m4-EUM" id="cWG-8x-Vym"/>
+                <outlet property="carNumLabel" destination="Mgk-VA-wIW" id="xse-dP-Jc4"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="243.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sport-car_light" width="38" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthlyRentViewController">
+            <connections>
+                <outlet property="headerView" destination="ikD-rq-tZe" id="sTE-YF-RNm"/>
+                <outlet property="rentTableView" destination="EyN-bO-wyJ" id="ipE-0v-Lpe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikD-rq-tZe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月租/产权缴费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxt-5n-H2X">
+                            <rect key="frame" x="112" y="34" width="150" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="JGb-Ti-UFm"/>
+                                <constraint firstAttribute="width" constant="150" id="lHg-aQ-aN3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBack" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-1f-4FZ">
+                            <rect key="frame" x="15" y="33.5" width="15" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="6rX-2l-ofP"/>
+                                <constraint firstAttribute="width" constant="15" id="qRX-h4-fbB"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="614-dg-AqF">
+                            <rect key="frame" x="0.0" y="20" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="pRO-a2-YWi"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="6Hl-Mz-bgy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="vxt-5n-H2X" firstAttribute="centerY" secondItem="2qx-1f-4FZ" secondAttribute="centerY" id="3b7-am-Q4Z"/>
+                        <constraint firstAttribute="bottom" secondItem="vxt-5n-H2X" secondAttribute="bottom" constant="10" id="GkU-ar-Yyx"/>
+                        <constraint firstAttribute="centerX" secondItem="vxt-5n-H2X" secondAttribute="centerX" id="SaO-hy-syx"/>
+                        <constraint firstItem="614-dg-AqF" firstAttribute="leading" secondItem="ikD-rq-tZe" secondAttribute="leading" id="ZZC-Ju-H7w"/>
+                        <constraint firstAttribute="bottom" secondItem="614-dg-AqF" secondAttribute="bottom" id="gMm-Ze-ofW"/>
+                        <constraint firstItem="2qx-1f-4FZ" firstAttribute="leading" secondItem="ikD-rq-tZe" secondAttribute="leading" constant="15" id="gmm-ti-hVQ"/>
+                        <constraint firstAttribute="height" constant="64" id="oMY-JI-zGi"/>
+                        <constraint firstItem="614-dg-AqF" firstAttribute="top" secondItem="ikD-rq-tZe" secondAttribute="top" constant="20" id="rSQ-Nt-OMx"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EyN-bO-wyJ">
+                    <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bCh-f2-0ST"/>
+                        <outlet property="delegate" destination="-1" id="pcb-fG-1uk"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EyN-bO-wyJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="125-e7-7Jp"/>
+                <constraint firstAttribute="trailing" secondItem="ikD-rq-tZe" secondAttribute="trailing" id="3G3-NY-beC"/>
+                <constraint firstAttribute="bottom" secondItem="EyN-bO-wyJ" secondAttribute="bottom" id="Eio-3z-rNw"/>
+                <constraint firstAttribute="trailing" secondItem="EyN-bO-wyJ" secondAttribute="trailing" id="d6N-99-aOu"/>
+                <constraint firstItem="ikD-rq-tZe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oye-6b-gEm"/>
+                <constraint firstItem="ikD-rq-tZe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="s1w-fb-AaK"/>
+                <constraint firstItem="EyN-bO-wyJ" firstAttribute="top" secondItem="ikD-rq-tZe" secondAttribute="bottom" constant="8" id="vJa-17-kwc"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaultBack" width="21" height="28"/>
+    </resources>
+</document>

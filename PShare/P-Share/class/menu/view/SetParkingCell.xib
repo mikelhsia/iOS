@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="setParkingCellId" rowHeight="54" id="E2t-Ix-NBO" customClass="SetParkingCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E2t-Ix-NBO" id="HdE-a4-hn1">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Tw-oc-M6t" userLabel="colorView">
+                        <rect key="frame" x="10" y="5" width="5" height="42.5"/>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.66274509800000003" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="UeF-lu-LrC"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkingDefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-c1-Jo8">
+                        <rect key="frame" x="23" y="6" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JfG-pc-HUB"/>
+                            <constraint firstAttribute="width" constant="40" id="gKY-Bl-VlT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="徐汇商务大厦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gE-3m-gi1">
+                        <rect key="frame" x="73" y="7" width="170" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="117" id="XHf-ZW-aFF"/>
+                            <constraint firstAttribute="width" constant="188" id="g7Q-qO-azW"/>
+                            <constraint firstAttribute="height" constant="20" id="mbQ-tC-nG3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XHf-ZW-aFF"/>
+                                <exclude reference="g7Q-qO-azW"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黄浦区淮海东路99号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yre-f7-Now">
+                        <rect key="frame" x="86" y="31" width="167" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="73W-BU-yxk"/>
+                            <constraint firstAttribute="height" constant="15" id="95R-sp-SOF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="73W-BU-yxk"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNM-FX-d3F" userLabel="bottomView">
+                        <rect key="frame" x="0.0" y="52" width="386" height="5"/>
+                        <color key="backgroundColor" red="0.92030663329999995" green="0.92030663329999995" blue="0.92030663329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="PGy-HM-kR0"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-eI-MN5">
+                        <rect key="frame" x="263" y="13" width="68" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="68C-PQ-9eY"/>
+                            <constraint firstAttribute="height" constant="26" id="tlo-5Y-k8Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="设为公司">
+                            <color key="titleColor" red="0.18823529410000001" green="0.66274509800000003" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="setHomeParkingBtnClick:" destination="E2t-Ix-NBO" eventType="touchUpInside" id="4A9-bx-nX6"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setParkingListMap" translatesAutoresizingMaskIntoConstraints="NO" id="BTX-7M-65h">
+                        <rect key="frame" x="73" y="31" width="8" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="w0e-FG-y2K"/>
+                            <constraint firstAttribute="width" constant="8" id="yu0-gE-9XJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekl-Rn-2Ff">
+                        <rect key="frame" x="331" y="11.5" width="47" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="设为家">
+                            <color key="titleColor" red="0.3921568627" green="0.75686274509999996" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QNM-FX-d3F" firstAttribute="top" secondItem="BTX-7M-65h" secondAttribute="bottom" constant="7" id="2W9-K2-rGo"/>
+                    <constraint firstItem="QNM-FX-d3F" firstAttribute="top" secondItem="rdY-eI-MN5" secondAttribute="bottom" constant="13" id="4B3-UG-JqM"/>
+                    <constraint firstItem="ekl-Rn-2Ff" firstAttribute="leading" secondItem="rdY-eI-MN5" secondAttribute="trailing" id="6KC-sr-yhc"/>
+                    <constraint firstAttribute="bottom" secondItem="QNM-FX-d3F" secondAttribute="bottom" id="Kcz-HS-0re"/>
+                    <constraint firstItem="Yre-f7-Now" firstAttribute="leading" secondItem="BTX-7M-65h" secondAttribute="trailing" constant="5" id="MNo-yN-Ie9"/>
+                    <constraint firstItem="ekl-Rn-2Ff" firstAttribute="trailing" secondItem="HdE-a4-hn1" secondAttribute="trailingMargin" id="O2J-35-HYW"/>
+                    <constraint firstItem="4Tw-oc-M6t" firstAttribute="leading" secondItem="HdE-a4-hn1" secondAttribute="leading" constant="10" id="RK6-rn-OHS"/>
+                    <constraint firstAttribute="trailing" secondItem="QNM-FX-d3F" secondAttribute="trailing" id="TkS-xd-br9"/>
+                    <constraint firstItem="1gE-3m-gi1" firstAttribute="leading" secondItem="gtr-c1-Jo8" secondAttribute="trailing" constant="10" id="Xga-NO-te8"/>
+                    <constraint firstItem="Yre-f7-Now" firstAttribute="centerY" secondItem="BTX-7M-65h" secondAttribute="centerY" id="aQK-xe-bsy"/>
+                    <constraint firstItem="ekl-Rn-2Ff" firstAttribute="centerY" secondItem="rdY-eI-MN5" secondAttribute="centerY" id="aoZ-5E-9tU"/>
+                    <constraint firstItem="gtr-c1-Jo8" firstAttribute="centerY" secondItem="4Tw-oc-M6t" secondAttribute="centerY" id="cL7-y7-cuK"/>
+                    <constraint firstItem="1gE-3m-gi1" firstAttribute="top" secondItem="HdE-a4-hn1" secondAttribute="top" constant="7" id="dbV-qw-U7k"/>
+                    <constraint firstItem="QNM-FX-d3F" firstAttribute="leading" secondItem="HdE-a4-hn1" secondAttribute="leading" id="gaJ-t9-mqU"/>
+                    <constraint firstItem="rdY-eI-MN5" firstAttribute="leading" secondItem="Yre-f7-Now" secondAttribute="trailing" constant="10" id="gn4-29-lg5"/>
+                    <constraint firstItem="BTX-7M-65h" firstAttribute="leading" secondItem="gtr-c1-Jo8" secondAttribute="trailing" constant="10" id="h1W-zf-rxJ"/>
+                    <constraint firstItem="rdY-eI-MN5" firstAttribute="centerY" secondItem="gtr-c1-Jo8" secondAttribute="centerY" id="h4C-r8-bOh"/>
+                    <constraint firstItem="rdY-eI-MN5" firstAttribute="top" secondItem="HdE-a4-hn1" secondAttribute="top" constant="13" id="j34-ht-ogX"/>
+                    <constraint firstItem="4Tw-oc-M6t" firstAttribute="top" secondItem="HdE-a4-hn1" secondAttribute="top" constant="5" id="jrb-7F-uJK"/>
+                    <constraint firstAttribute="bottom" secondItem="4Tw-oc-M6t" secondAttribute="bottom" constant="10" id="lU3-V2-8R7"/>
+                    <constraint firstAttribute="trailing" secondItem="rdY-eI-MN5" secondAttribute="trailing" constant="55" id="lpo-k6-eem"/>
+                    <constraint firstAttribute="bottom" secondItem="Yre-f7-Now" secondAttribute="bottom" constant="12" id="q04-6c-ys4"/>
+                    <constraint firstItem="gtr-c1-Jo8" firstAttribute="leading" secondItem="4Tw-oc-M6t" secondAttribute="trailing" constant="8" id="s3Q-x7-150"/>
+                    <constraint firstItem="Yre-f7-Now" firstAttribute="leading" secondItem="gtr-c1-Jo8" secondAttribute="trailing" constant="40" id="v4Y-bb-b8v"/>
+                    <constraint firstItem="rdY-eI-MN5" firstAttribute="leading" secondItem="1gE-3m-gi1" secondAttribute="trailing" constant="20" id="yeE-0X-IFb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4B3-UG-JqM"/>
+                        <exclude reference="q04-6c-ys4"/>
+                        <exclude reference="v4Y-bb-b8v"/>
+                        <exclude reference="j34-ht-ogX"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorView" destination="4Tw-oc-M6t" id="VtQ-yx-yP7"/>
+                <outlet property="parkingImageView" destination="gtr-c1-Jo8" id="Tss-LO-YnN"/>
+                <outlet property="parkingPriceLabel" destination="Yre-f7-Now" id="ZDR-pd-Xr2"/>
+                <outlet property="parkingTitleLabel" destination="1gE-3m-gi1" id="5c0-ji-TUD"/>
+                <outlet property="setHomeParkingBtn" destination="rdY-eI-MN5" id="5mh-ho-8tt"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="262"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="parkingDefaultImage" width="75" height="75"/>
+        <image name="setParkingListMap" width="11" height="19"/>
+    </resources>
+</document>

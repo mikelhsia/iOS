@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "acc79f6d-110f-4c95-a1c3-91b85286f091++9031",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "acc79f6d-110f-4c95-a1c3-91b85286f091++9031" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "acc79f6d-110f-4c95-a1c3-91b85286f091++9031" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E9723CA1-FF1F-4F15-92A1-4B92A16CB5EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "acc79f6d-110f-4c95-a1c3-91b85286f091++9031" : "02-Engineering\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "P-Share",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "03-Code_实现\/app\/iOS\/PShare\/P-Share.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/liangliang.cao@192.168.1.160:9999\/repos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "acc79f6d-110f-4c95-a1c3-91b85286f091++9031"
+    }
+  ]
+}

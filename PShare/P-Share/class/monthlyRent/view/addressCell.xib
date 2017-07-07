@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressCellId" id="KGk-i7-Jjw" customClass="addressCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectParking" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-vC-q42">
+                        <rect key="frame" x="15" y="18" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="84C-q6-5Eb"/>
+                            <constraint firstAttribute="height" constant="23" id="Mt1-2W-lpv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恒积大厦地下停车场" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORs-uY-GLa">
+                        <rect key="frame" x="53" y="10" width="307" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HEd-TN-64R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市黄浦区淮海东路199号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ou-Ba-1It">
+                        <rect key="frame" x="53" y="33" width="307" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="zZz-tj-UNx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwr-AO-ppe">
+                        <rect key="frame" x="0.0" y="58.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.92505129419999998" green="0.92505129419999998" blue="0.92505129419999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iec-og-GDK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Xwr-AO-ppe" secondAttribute="trailing" id="0sP-Vz-Z5S"/>
+                    <constraint firstAttribute="centerY" secondItem="RaM-vC-q42" secondAttribute="centerY" id="17E-3s-1jr"/>
+                    <constraint firstItem="4Ou-Ba-1It" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3YW-j3-uSX"/>
+                    <constraint firstItem="4Ou-Ba-1It" firstAttribute="leading" secondItem="RaM-vC-q42" secondAttribute="trailing" constant="15" id="6wB-uL-nxV"/>
+                    <constraint firstAttribute="bottom" secondItem="Xwr-AO-ppe" secondAttribute="bottom" id="JN7-pu-aFh"/>
+                    <constraint firstAttribute="trailing" secondItem="ORs-uY-GLa" secondAttribute="trailing" constant="15" id="L8l-vQ-6dM"/>
+                    <constraint firstItem="ORs-uY-GLa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OVU-EN-gA8"/>
+                    <constraint firstItem="Xwr-AO-ppe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YIh-69-XMY"/>
+                    <constraint firstItem="RaM-vC-q42" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="g16-dG-OUi"/>
+                    <constraint firstItem="ORs-uY-GLa" firstAttribute="leading" secondItem="RaM-vC-q42" secondAttribute="trailing" constant="15" id="gqb-bL-Fuh"/>
+                    <constraint firstAttribute="trailing" secondItem="4Ou-Ba-1It" secondAttribute="trailing" constant="15" id="jT0-i7-K7Q"/>
+                    <constraint firstItem="4Ou-Ba-1It" firstAttribute="top" secondItem="ORs-uY-GLa" secondAttribute="bottom" constant="3" id="mL4-DN-85q"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="3YW-j3-uSX"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="parkingAddressLabel" destination="4Ou-Ba-1It" id="jsf-YW-9sd"/>
+                <outlet property="parkingNameLabel" destination="ORs-uY-GLa" id="BN5-c6-6L2"/>
+            </connections>
+            <point key="canvasLocation" x="294.5" y="257"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selectParking" width="34" height="34"/>
+    </resources>
+</document>

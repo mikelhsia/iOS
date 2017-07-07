@@ -1,0 +1,39 @@
+//
+//  PSharePrefix.pch
+//  P-Share
+//
+//  Created by 杨继垒 on 15/9/1.
+//  Copyright (c) 2015年 杨继垒. All rights reserved.
+//
+
+#ifndef P_Share_PSharePrefix_pch
+#define P_Share_PSharePrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//-----------------自定义输出
+#ifdef DEBUG
+#define MyLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define MyLog(format, ...)
+#endif
+//-----------------
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Const.h"
+#import "MyUtil.h"
+#import "SliderViewController.h"
+#import "AppDelegate.h"
+#import "NetworkTooler.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+
+#endif
+
+#endif

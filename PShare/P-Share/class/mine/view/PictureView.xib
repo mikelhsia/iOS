@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PictureView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-Nu-deZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrows" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-LP-xAQ">
+                            <rect key="frame" x="15" y="35" width="15" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="2sm-2I-5NY"/>
+                                <constraint firstAttribute="width" constant="15" id="AcL-8b-NHR"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrows" translatesAutoresizingMaskIntoConstraints="NO" id="tp2-wI-zdj">
+                            <rect key="frame" x="345" y="35" width="15" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Wad-9g-B6M"/>
+                                <constraint firstAttribute="width" constant="15" id="inR-Z8-D9v"/>
+                            </constraints>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-Cv-35Q">
+                            <rect key="frame" x="45" y="0.0" width="285" height="90"/>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKT-9X-S76" userLabel="rightBtn">
+                            <rect key="frame" x="330" y="0.0" width="45" height="90"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rightBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8xO-88-UJS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwi-Es-1aR" userLabel="leftBtn">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="90"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="lefiBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="t8z-2c-4A2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tKT-9X-S76" secondAttribute="bottom" id="1Ey-HV-QC8"/>
+                        <constraint firstAttribute="trailing" secondItem="tKT-9X-S76" secondAttribute="trailing" id="3wM-dq-f53"/>
+                        <constraint firstItem="tKT-9X-S76" firstAttribute="top" secondItem="ccM-Nu-deZ" secondAttribute="top" id="KUR-0J-mMp"/>
+                        <constraint firstItem="tKT-9X-S76" firstAttribute="leading" secondItem="Xaq-Cv-35Q" secondAttribute="trailing" id="PJE-Bc-2CT"/>
+                        <constraint firstItem="Xaq-Cv-35Q" firstAttribute="leading" secondItem="CFy-LP-xAQ" secondAttribute="trailing" constant="15" id="QMT-fC-fPk"/>
+                        <constraint firstItem="CFy-LP-xAQ" firstAttribute="leading" secondItem="ccM-Nu-deZ" secondAttribute="leading" constant="15" id="S6j-UQ-apq"/>
+                        <constraint firstAttribute="centerY" secondItem="tp2-wI-zdj" secondAttribute="centerY" id="Ul4-QZ-of9"/>
+                        <constraint firstItem="Xaq-Cv-35Q" firstAttribute="leading" secondItem="Kwi-Es-1aR" secondAttribute="trailing" id="Vwp-da-LLa"/>
+                        <constraint firstItem="Xaq-Cv-35Q" firstAttribute="top" secondItem="ccM-Nu-deZ" secondAttribute="top" id="fYR-1u-Fp7"/>
+                        <constraint firstItem="tp2-wI-zdj" firstAttribute="leading" secondItem="Xaq-Cv-35Q" secondAttribute="trailing" constant="15" id="hxP-nT-2ui"/>
+                        <constraint firstAttribute="height" constant="90" id="iTs-F3-RlI"/>
+                        <constraint firstAttribute="centerY" secondItem="CFy-LP-xAQ" secondAttribute="centerY" id="kH8-8g-wft"/>
+                        <constraint firstAttribute="bottom" secondItem="Kwi-Es-1aR" secondAttribute="bottom" id="t5H-Z6-crR"/>
+                        <constraint firstAttribute="trailing" secondItem="tp2-wI-zdj" secondAttribute="trailing" constant="15" id="uOI-fX-Zc8"/>
+                        <constraint firstAttribute="bottom" secondItem="Xaq-Cv-35Q" secondAttribute="bottom" id="ugb-7s-SZ1"/>
+                        <constraint firstItem="Kwi-Es-1aR" firstAttribute="leading" secondItem="ccM-Nu-deZ" secondAttribute="leading" id="wOi-7S-icE"/>
+                        <constraint firstItem="Kwi-Es-1aR" firstAttribute="top" secondItem="ccM-Nu-deZ" secondAttribute="top" id="xem-VG-CjQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ccM-Nu-deZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4gf-D7-dRM"/>
+                <constraint firstAttribute="bottom" secondItem="ccM-Nu-deZ" secondAttribute="bottom" constant="10" id="5JB-Rd-dOk"/>
+                <constraint firstItem="ccM-Nu-deZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JMe-cW-qqQ"/>
+                <constraint firstAttribute="trailing" secondItem="ccM-Nu-deZ" secondAttribute="trailing" id="mIx-CO-OUW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carPictureScrollView" destination="Xaq-Cv-35Q" id="UHn-hc-bmn"/>
+            </connections>
+            <point key="canvasLocation" x="300.5" y="305"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leftArrows" width="21" height="29"/>
+        <image name="rightArrows" width="21" height="29"/>
+    </resources>
+</document>

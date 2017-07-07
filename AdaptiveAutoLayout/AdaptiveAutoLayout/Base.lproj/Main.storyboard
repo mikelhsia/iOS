@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="nVQ-A4-gRK">
+                                <rect key="frame" x="233" y="132" width="133" height="133"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFC-iZ-KMk">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cfF-oi-fcm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zS-uh-SWa">
+                                <rect key="frame" x="200" y="315" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自适应自动布局Demo by Puzhi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-RT-RbI">
+                                <rect key="frame" x="183" y="559" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AJ-lJ-x62">
+                                <rect key="frame" x="200" y="355" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0yv-va-Q9A"/>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2GX-Yt-KoE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gvg-RT-RbI" secondAttribute="bottom" constant="20" id="47U-Vn-wt5"/>
+                            <constraint firstItem="0AJ-lJ-x62" firstAttribute="centerX" secondItem="2zS-uh-SWa" secondAttribute="centerX" id="7dZ-6O-djw"/>
+                            <constraint firstItem="2zS-uh-SWa" firstAttribute="width" secondItem="JFC-iZ-KMk" secondAttribute="width" id="7eW-fv-4Xq"/>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="centerX" secondItem="nVQ-A4-gRK" secondAttribute="centerX" id="8vN-CA-ACV"/>
+                            <constraint firstItem="0AJ-lJ-x62" firstAttribute="width" secondItem="JFC-iZ-KMk" secondAttribute="width" id="Cl2-TI-e4G"/>
+                            <constraint firstAttribute="trailing" secondItem="JFC-iZ-KMk" secondAttribute="trailing" constant="60" id="DzW-wa-49c"/>
+                            <constraint firstItem="2zS-uh-SWa" firstAttribute="centerX" secondItem="JFC-iZ-KMk" secondAttribute="centerX" id="EUe-lg-NsU"/>
+                            <constraint firstItem="nVQ-A4-gRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="Fcq-D1-qSg"/>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Um6-j5-fq8"/>
+                            <constraint firstItem="2zS-uh-SWa" firstAttribute="top" secondItem="JFC-iZ-KMk" secondAttribute="bottom" id="dcT-VX-MCU"/>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="top" secondItem="nVQ-A4-gRK" secondAttribute="bottom" constant="20" id="hZE-ZX-m19"/>
+                            <constraint firstItem="0AJ-lJ-x62" firstAttribute="top" secondItem="2zS-uh-SWa" secondAttribute="bottom" constant="10" id="kep-wc-GeH"/>
+                            <constraint firstItem="nVQ-A4-gRK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lfM-oP-FlP"/>
+                            <constraint firstItem="gvg-RT-RbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdd-6F-vrk"/>
+                            <constraint firstItem="JFC-iZ-KMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIr-Uo-VoW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fcq-D1-qSg"/>
+                                <exclude reference="lfM-oP-FlP"/>
+                                <exclude reference="0yv-va-Q9A"/>
+                                <exclude reference="DzW-wa-49c"/>
+                                <exclude reference="Um6-j5-fq8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Fcq-D1-qSg"/>
+                                <include reference="lfM-oP-FlP"/>
+                                <include reference="0yv-va-Q9A"/>
+                                <exclude reference="2GX-Yt-KoE"/>
+                                <exclude reference="8vN-CA-ACV"/>
+                                <include reference="DzW-wa-49c"/>
+                                <exclude reference="Um6-j5-fq8"/>
+                                <exclude reference="hZE-ZX-m19"/>
+                                <exclude reference="wIr-Uo-VoW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="289.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="head" width="133" height="133"/>
+    </resources>
+</document>
